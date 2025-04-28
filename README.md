@@ -33,3 +33,43 @@ project-root/
     └── metrics.json
 ```
 
+## Usage
+
+1. **Setup the Project:**
+   - Clone the repository.
+   - Ensure you have Python installed.
+   - Install required dependencies using the requirements.txt file.
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Load Raw Data:**
+   ```bash
+   python scripts/01_data_loading.py
+   ```
+
+3. **Preprocess Data:**
+   ```bash
+   python scripts/02_preprocessing.py
+   ```
+
+4. **Engineer Features:**
+   ```bash
+   python scripts/03_feature_engineering.py
+   ```
+
+5. **Exploratory Analysis:**
+   ```bash
+   python scripts/04_exploratory_analysis.py
+   ```
+
+6. **Text Analysis (Sentiment & Topics):**
+   ```bash
+   python scripts/05_text_analysis.py
+   ```
+
+7. **Modeling (Predict Suggested %):**
+   ```bash
+   python scripts/06_modeling.py
+   ```
+
