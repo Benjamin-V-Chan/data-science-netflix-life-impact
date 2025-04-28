@@ -1,5 +1,13 @@
-# 1. import pandas and pathlib
-# 2. define DATA_PATH pointing at data/Netflix Life Impact Dataset (NLID).csv
-# 3. load CSV into a DataFrame
-# 4. print row count and columns
-# 5. save raw DataFrame to outputs/raw_data.pkl
+import pandas as pd
+from pathlib import Path
+
+def main():
+    data_path = Path(__file__).parent.parent / "data" / "Netflix Life Impact Dataset (NLID).csv"
+    df = pd.read_csv(data_path)
+    print(f"Loaded {len(df)} rows with columns: {list(df.columns)}")
+    out = Path(__file__).parent.parent / "outputs"
+    out.mkdir(exist_ok=True)
+    df.to_pickle(out / "raw_data.pkl")
+
+if __name__ == "__main__":
+    main()
