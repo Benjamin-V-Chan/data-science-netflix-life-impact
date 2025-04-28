@@ -73,3 +73,17 @@ project-root/
    python scripts/06_modeling.py
    ```
 
+## Requirements
+
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- textblob
+- joblib
+
+## Acknowledgments
+
+dataset name: Netflix Life Impact Dataset (NLID)  
+dataset author: Towhidul Islam  
+dataset source: https://www.kaggle.com/datasets/towhid121/netflix-life-impact-dataset-nlid
